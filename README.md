@@ -8,7 +8,16 @@
 Creates the CRUD processes for and Internet retail produce database management application
 
 ## Table of Contents
-  
+1. [Description](#Description)
+2. [User Story](#User-Story)
+3. [Acceptance Criteria](#acceptance-criteria)
+4. [Screenshots](#Screenshots)
+5. [Installation](#Installation)
+6. [Usage](#Usage)
+7. [Recorded Video](#Recorded-Video)
+8. [License](#license)
+9. [Contact Info](#Contact-Info)
+
 
 ## User Story
 
@@ -34,30 +43,23 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
 
-## Visual Documentation
+## Screenshots
 
-
-
-
-
-
-
-
-
-
-## Visual Database Schema
-
-The following is a visual representation of the ecommerce_db database schema.
-
-
+![seeds running image](/assets/images/module%2013%20screenshot.png)
+![product created image](/assets/images/module%2013%20screenshot2.png)
 
 ## Installation
 
-Initialize npm to produce the package.json file.
-Type npm install to install the following: MySQL2, sequelize, express, dotenv.
- 
-In the command line, type npm start.
-USES Insomnia to perform CRUD tasks
+Clone the repository to your local machine and run 'npm install' to install all corresponding modules.
+Create a new/update .env file in the main directory with your mysql credentials 
+DB_NAME = 'e-commerce_db' 
+DB_USER = 'root' 
+DB_PASSWORD = 'enter your password here!'
+Run 'mysql -u root -p' to ensure that you are logged into MySQL
+Source the seed data by running 'SOURCE db/schema.sql' and then type 'quit' to exit MySQL
+Run 'npm run seed'
+Run 'node seeds/index.js'
+Start the server using 'npm start' and go! :)
 
 
 ## Usage
@@ -68,23 +70,17 @@ USES Insomnia to perform CRUD tasks
 - sequelize - to interpret the SQL commands
 - Insomnia app - to perform the CRUD functions to the database 
 
-## Credits
-
+## Recorded Video
+***
+###### [Back to Table of Contents](#Table-of-Contents)
+https://drive.google.com/file/d/1JhSZHJ5r6sFNxAbzcClMIFvbkouzCQLa/view
 
 
 ## License
+###### [Back to Table of Contents](#Table-of-Contents)
+MIT
 
-
-
-
-
-## Features
-
-
-
-
-
-
-  
 ## Contact Info
+Github repo link:https://github.com/Jerontai-Mcfee/Module-13-Object-Relational-Mapping
+Email: jerontai07@gmail.com
 
